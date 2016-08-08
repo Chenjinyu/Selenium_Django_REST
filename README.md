@@ -45,6 +45,6 @@ python manage.py runserver, make sure the website can be visited. go to Seleniun
 it will generate log file and demo_select_product_test_report.html or demo_select_product_test_report.xml.
 
 
-keywords: Django, Selenium DjangoRestframework, EmailConfig, Database, ParserConfigFile, etc.
+keywords: Django, Selenium, DjangoRestframework, EmailConfig, Database, ParserConfigFile, etc.
 
 hope useful for you. good luck guys.
