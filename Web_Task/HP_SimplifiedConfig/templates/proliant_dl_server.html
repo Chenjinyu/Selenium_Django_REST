@@ -1,0 +1,26 @@
+{% extends "header.html" %}
+{% load staticfiles %}
+{% block content%}
+
+<div style="width:100%;">
+	<ul>
+{% for ser in object_list %}
+<li><div style="width:900px; margin-left:300px; margin-bottom: 20px;margin-top: 20px; border-bottom: 1px solid grey; float: left;">
+	<div style="float:left;">
+		<img src="{%static 'images/prod_img/ProLiant_DL300_Servers.jpg'%}" style="width:150px; height:150px; margin-right: 10px;"/>
+	</div>
+	
+	<div style="float:left">
+		<div>
+			<a href="/HP_SimplifiedConfig/1/11/" style="font-size:16px;">{{ser.title}}</a>
+		</div>
+		<div>
+			{{ser.description|safe}}
+		</div>
+	</div>
+</div></li>
+{% endfor %}
+</ul>
+</div>
+<div style="clear: both"></div>
+{% endblock %}

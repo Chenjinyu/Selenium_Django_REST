@@ -1,0 +1,26 @@
+{% extends "header.html" %}
+{% load staticfiles %}
+{% block content%}
+
+<div style="width:100%;">
+	<ul>
+{% for ser in object_list %}
+<li><div id="dl_content">
+	<div id="dl_img_div">
+		<img id="dl_prd_img" src="{%static 'images/prod_img/HPE_ProLiant_DL380_Gen9_Server.jpg'%}"/>
+	</div>
+	
+	<div id="dl_cont_div">
+		<div>
+			<a href="/HP_SimplifiedConfig/1/11/111" id="dl_cont_img">{{ser.title}}</a>
+		</div>
+		<div id="dl_des_div">
+			{{ser.description|safe}}
+		</div>
+	</div>
+</div></li>
+{% endfor %}
+</ul>
+</div>
+<div style="clear: both"></div>
+{% endblock %}

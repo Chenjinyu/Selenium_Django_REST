@@ -1,0 +1,367 @@
+/**
+ author: Chen Jinyu
+ email: jinyu2010.chen@gmail.com
+ date: 2016-05-04
+ */
+
+html, body {
+	height:100%
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 0;
+	outline: none;
+}
+
+.clear {
+	line-height: 0;
+	font-size: 0;
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+#page_body {
+	width: 100%;
+	height: 100%;
+}
+/*** header ***/
+#header {
+	width: 100%;
+	height: 95px;
+	background-color: #425563;
+	margin: 0px auto;
+}
+#header_content {
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+}
+#header_left {
+	position:absolute;
+	left: 140px;
+	width: 240px;
+}
+
+#header_right {
+	position:absolute;
+	right: 450px;
+	width: 550px;
+	margin-top: 20px;
+}
+
+#header_tools ul li { float:left; width: 100px; height:90px; color: #ffffff; font-weight: bold;}
+.menu_link {color: #ffffff; font-weight: bold;}
+
+#header_logo {
+	float: left;
+	margin: 10px 0px;
+}
+
+body_div {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #4f5d6e;
+  position: relative;
+  background: rgb(26, 49, 95);
+}
+
+.body-wrap {
+  min-height: 700px;
+}
+
+.body-wrap {
+  position: relative;
+  z-index: 0;
+}
+
+
+#chs_body{
+	margin: 30px 40px;
+	
+}
+
+#chs_body div{
+	
+}
+
+#prd_list{
+	height: 150px;	
+}
+
+#prd_list ul li {
+	display:list-item;
+	text-align: -webkit-match-parent;
+	line-height:16px;
+	margin-bottom:16px;
+}
+
+#prd_list ui li a, a:link,a:visited {
+	color: #757575;
+	padding:5px;
+}
+
+
+#prd_list ul li a:hover {
+	color: #4f5d6e; 
+	text-decoration: underline;
+}
+
+#left_c, #right_c {
+	float: left;
+	width: 250px;
+}
+
+/* proliant css begin*/
+#dl_content{
+	width:900px; 
+	margin-left:300px; 
+	margin-bottom: 20px;
+	margin-top: 20px; 
+	border-bottom: 1px solid grey; 
+	float: left;
+}
+
+#dl_img_div{
+	float:left; 
+	width: 160px;
+}
+
+#dl_prd_img{
+	width:150px; 
+	height:150px; 
+	margin-right: 10px;
+}
+
+#dl_cont_div{
+	float:left;
+	width: 740px;
+}
+
+#dl_cont_img{
+	font-size:16px;
+}
+
+#dl_des_div{
+	margin-top:20px; 
+	margin-bottom: 20px;
+}
+/* proliant css end */
+
+/**  open config css **/
+#custom-search-input {
+        margin:0;
+        margin-top: 10px;
+        padding: 0;
+    }
+ 
+    #custom-search-input .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    #custom-search-input button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color:#D9230F;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+    
+/* end of open config css */
+
+
+#footer_body{
+	width: 100%;
+	height: 400px;
+	background-color: #f0f0f0;
+}
+
+#country_sel {
+	width: 400px;
+	padding-top: 40px;
+	margin-left:200px
+}
+
+#footer_b_c { 
+	margin-left: 200px;
+	margin-right: 80px;
+	margin-top: 20px;
+	}
+
+#footer_b_c div{
+	float: left;
+	margin-right: 20px;
+	width:170px;
+}
+
+#footer_b_c div ul li {
+	line-height: 30px;
+	font-size:12px;
+	color: #000000;
+	font-weight: bold;
+}
+
+#footer_b_c div ul li a{
+	line-height: 30px;
+	font-size:13px;
+	color: #6a6a6a;
+}
+
+
+/* cofnig page */
+#cgr_left_a{
+	float:left;
+	width:40px;
+	height:100%;
+}
+
+#cgr_left_a img{
+	margin-top: 20px;
+	vertical-align : middle;
+}
+
+#cgr_right_a{
+	float: left;
+	width: 40px;
+	height:100%;
+}
+
+#config_cgr_content{
+	float:left;
+	width: 800px;
+	border: 1px solid gray;
+	border-radius:25px;
+	padding:10px;
+}
+
+#config_cgr_content img{
+	width: 50px;
+	height:50px;
+}
+
+#config_cgr_content a{
+	font-size: 10px;
+	padding-left:5px;
+}
+
+.cgr_group{
+	margin: 0 10px;
+	cursor: pointer; 
+	cursor: hand;
+}
+
+#cgr_right_a img{
+	margin-top: 20px;
+	vertical-align : middle;
+}
+
+
+#config_cgr_content div{
+	float:left;
+	width: 80px;
+	padding-left:10px;
+}
+
+#cgr_info_div{
+	float: left;
+	width:1000px;
+}
+
+.table_req{
+	width: 800px;
+	margin-top:10px;
+	margin-bottom:30px;
+}
+
+.tableheader{
+	padding: 7px;
+	font-weight: bold;
+	font-size: 9pt;
+	color: #ffffff;
+	font-family:"arial,verdana,sans-serif";
+	background-color:#425563;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+TD.tabledetail{
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:4px;
+	padding-bottom:4px;
+	font-weight: normal;
+	font-size: 9pt;
+	color: #000000;
+	font-family:arial,verdana,sans-serif;
+	background-color:#f0f0ff;
+	text-decoration:none;
+}
+	
+.choice_icon{
+	width:18px;
+	height:18px;
+	position: relative;
+	top: 3px;
+	vertical-align: text-bottom;
+}
+
+#loading_div{
+	display:none;
+	float:left; 
+	width:800px; 
+	margin:200px 200px; 
+	z-index:200;
+}
+
+
+/* config page beigin*/
+#config_cont{
+	margin: 20px 200px;
+}
+
+#config_title {
+	font-size: 16px; 
+	font-weight: bold; 
+	color: black;
+}
+
+.div_line{
+	border-bottom: 1px solid gray; 
+}
+
+#untitled_title{
+	font-size: 14px; 
+	font-weight: bold; 
+	color: black;
+	margin: 10px 0;
+}
+
+/* config page end */

@@ -1,0 +1,26 @@
+{% extends "header.html" %}
+{% load staticfiles %}
+{% block content%}
+
+<div style="width:100%;">
+	<div style="width:900px; margin-left:300px; margin-bottom: 20px;margin-top: 20px; "><h4>Factory Integrated Models - *Configured Components are integrated at the factory</h4></div>
+	<div style="width:1400px; border-bottom: 1px solid gray; margin: 10px auto;"></div>
+	<ul>
+{% for ser in object_list %}
+<li>
+	<div style="width:900px; margin-left:300px; margin-bottom: 20px;border-bottom: 1px solid grey; float: left; padding: 20px;">
+	<div style="float:left;width: 740px;">
+		<div>
+			<a href="/HP_SimplifiedConfig/1/11/111/1111/" style="font-size:16px;">{{ser.title}}</a>
+		</div>
+		<div style="margin-top:20px; margin-bottom: 20px;">
+			{{ser.description|safe}}
+		</div>
+		<div><button class="hp_btn" type="button" style="border:2px solid green; padding:10px; background-color: white; color: black; font-size: 14px; width:120px;" onclick="window.location='/HP_SimplifiedConfig/1/11/111/1111/'">CUSTOMIZE</button><span style="margin-left:5px;"> Price: <b>{{ser.price}}</b></span></div>
+	</div>
+</div></li>
+{% endfor %}
+</ul>
+</div>
+<div style="clear: both"></div>
+{% endblock %}

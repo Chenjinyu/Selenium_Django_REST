@@ -1,0 +1,59 @@
+{% extends "header.html" %}
+{% load staticfiles %}
+{% block content%}
+
+<div id="config_cont">
+	<div id="config_title">One Config Simple (OCS)</div>
+	<div>New Configuration</div>
+	<div class="div_line"></div>
+	<div>
+		<div>
+			<div id="untitled_title">Untitled Configuration 1</div>
+			<div id="config_cgr_div">
+				<div id="cgr_left_a">
+					<a id="arrow_left_a" href="#">
+						<img src="{% static 'images/prod_img/prod_categories/left_default.png'%}" id="arrow_left"/>
+					</a>
+				</div>
+				<div id="config_cgr_content">
+					<div id="cgr_processer" class="cgr_group" onclick="request_info('processor')">
+						<img src="{% static 'images/prod_img/prod_categories/processor.gif'%}"/>
+						<a>Processer</a>
+					</div>
+					<div id="cgr_memory" class="cgr_group"  onclick="request_info('memory')">
+						<img src="{% static 'images/prod_img/prod_categories/memory.gif'%}"/>
+						<a>Memory</a>
+					</div>
+					<div id="cgr_storage" class="cgr_group"  onclick="request_info('storage')">
+						<img src="{% static 'images/prod_img/prod_categories/storage.gif'%}"/>
+						<a>Storage</a>
+					</div>
+				</div>
+				<div id="cgr_right_a">
+					<a id="arrow_right_a" href="#">
+						<img src="{% static 'images/prod_img/prod_categories/right_default.png'%}" id="arrow_right"/>
+					</a>
+				</div>
+			</div>	
+		</div>
+		<div id="cgr_info_div">
+			<div id="loading_div">
+				<div style="float:left">
+					<img src="/static/images/prod_img/prod_categories/loading.gif"/>
+				</div>
+				<div style="float:left; padding: 10px;color:#1967AF;">Loading...</div>
+			</div>
+			<div id="cgr_loaded">
+			</div>
+		</div>
+		
+		<div style="clear:both"></div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		request_info('processor');
+	});
+</script>
+{% endblock %}
+

@@ -1,0 +1,59 @@
+<h3>HP DL580 Gen9 Configure-to-order Server</h3>
+
+<h5>Select your processors</h5>
+{% load staticfiles %}
+{% block content %}
+<div>
+	<table>
+		<tr>
+			<td><img class="choice_icon" src="{% static 'images/prod_img/prod_categories/up-arrow.png'%}"/></td>
+			<td><span style="font-size:12px;">Primary Processor Kit (contains 1 processor)</span></td>
+		</tr>
+	</table>
+	<table class="table_req">
+		<tbody>
+			<tr>
+				<th class="tableheader"></th>
+				<th class="tableheader">Description</th>
+				<th class="tableheader">Part Number</th>
+				<th class="tableheader">Price</th>
+			</tr>
+				<tr>
+					<td class="tabledetail"><input type="checkbox" checked="checked"/></td>
+					<td class="tabledetail">HP DL580 Gen9 Intel Xeon E7-4830v3 (2.1GHz/12-core/30MB/115W) FIO Processor Kit </td>
+					<td class="tabledetail">788327-L21</td>
+					<td class="tabledetail">USD3,069.00</td>
+				</tr>
+		</tbody>
+	</table>
+</div>
+
+<div>
+	<table>
+		<tr>
+			<td><img class="choice_icon" src="{% static 'images/prod_img/prod_categories/up-arrow.png'%}"/></td>
+			<td><span style="font-size:12px;">Additional Processor Kit (contains 1 processor)</span></td>
+		</tr>
+	</table>
+	<table  class="table_req">
+		<tbody>
+			<tr>
+				<th class="tableheader">Part Number</th>
+				<th class="tableheader">Description</th>
+				<th class="tableheader">Price</th>
+				<th class="tableheader">QTY</th>
+			</tr>
+			{% for data in object_list %}
+				<tr>
+					<td class="tabledetail">{{data.part_num}}</td>
+					<td class="tabledetail">{{data.description}}</td>
+					<td class="tabledetail">{{data.price}}</td>
+					<td class="tabledetail">1</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+
+{% endblock %}
+
